@@ -1,0 +1,45 @@
+{
+    "user": [{
+            "email": "ali@yahoo.com",
+            "password": "12345",
+            "name": "Ali",
+            "id": 1
+        },
+        {
+            "email": "ahmed@yahoo.com",
+            "password": "12345",
+            "name": "Ahmed",
+            "id": 2
+        },
+        {
+            "email": "khawaja@gmail.com",
+            "password": "12345",
+            "name": "khawaja",
+            "id": 3
+        },
+        {
+            "email": "sohaib@test.com",
+            "password": "12345",
+            "name": "Sohaib",
+            "id": 4
+        },
+        {
+            "email": "shayan@test.com",
+            "password": "12345",
+            "name": "shayan",
+            "id": 5
+        },
+        {
+            "email": "rehan@gmail.com",
+            "password": "12345",
+            "name": "rehan",
+            "id": 6
+        },
+        {
+            "email": "ali3@gmail.com",
+            "password": "12345",
+            "name": "ALi3",
+            "id": 7
+        }
+    ]
+}
