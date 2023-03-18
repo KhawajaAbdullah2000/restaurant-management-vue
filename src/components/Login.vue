@@ -34,10 +34,17 @@ export default {
                 })
              }
          
+        },
 
-        }
+        mounted(){
+  //if a person alreasdy this.Signup, it should not go to signin page again
+            let user=localStorage.getItem("user-info");
+            if(user){
+                this.$router.push({name:'Home'});
+            }
+}
 
-    },
+    }
 
 }
 </script>
