@@ -16,8 +16,8 @@
 
     </div>
 
-    <div class="relative overflow-x-auto">
-        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+    <div class="relative overflow-x-auto py-6 px-3">
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400  border-blue-800 border-4">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
                     <th scope="col" class="px-6 py-3">
@@ -31,6 +31,9 @@
                     </th>
                     <th scope="col" class="px-6 py-3">
                         Address
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                      Actions
                     </th>
                 </tr>
             </thead>
@@ -47,6 +50,10 @@
                     </td>
                     <td class="px-6 py-4">
                         {{item.address}}
+                    </td>
+
+                    <td class="px-6 py-4">
+                      <router-link :to="'/update/'+item.id" class="text-blue-500">Update</router-link>
                     </td>
                 </tr>
                 
@@ -81,7 +88,8 @@ import axios from 'axios'
         if(!user){
             this.$router.push({name:'Signup'});
         }
-     let result=await axios.get("http://localhost:3000/restaurant/");
+
+        let result=await axios.get("http://localhost:3000/restaurant/");
          this.restaurant=result.data;
       
         }

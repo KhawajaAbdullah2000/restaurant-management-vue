@@ -10,8 +10,6 @@
   <br>
   <button v-on:click="Signup" class="bg-orange-600 text-white w-[76px] rounded-lg shadow-lg"> Signup</button>
 </div>
-
-
    
    
 </template>
